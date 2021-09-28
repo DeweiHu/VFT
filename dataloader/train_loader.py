@@ -1,3 +1,10 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Sep 23 17:36:14 2021
+
+@author: hudew
+"""
+
 import sys
 sys.path.insert(0,"E:\\tools\\")
 
@@ -41,3 +48,21 @@ for folder in os.listdir(OCTA_root):
             data.append(imageio.imread(data_root + file))
     else:
         pass
+
+class GetTrainDataset(Dataset):
+    
+    def __init__(self, im_size, num_sample, data_list, gt_list):
+        super().__init__()
+        self.im_size = im_size
+        self.num_sample = num_sample
+        self.data_list = data_list
+        self.gt_list = gt_list
+        self.data = ()
+        
+        for i in range(len(self.data_list)):
+            im = self.
+        
+        
+        
+        
+        
